@@ -1,5 +1,4 @@
-@font-face { font family: "open montserrat"
-<src ;
+@font-face: { font-family: 'Montserrat', sans-serif;
 
 }
 header{
@@ -8,10 +7,10 @@ header{
 }
 nav li{
 display: inline-block; 
-font-family: Montsrrat;
+font-family: "Montsrrat";
 
 }
-.section{
-
+.background{background: cover no-repeat url("..images/Clipboard.jpg");
+    
 
 }
