@@ -1,16 +1,36 @@
-@font-face: { font-family: 'Montserrat', sans-serif;
+@font-face: {
+  font-family: "Montserrat", sans-serif;
+};
 
+Header {
+  background-color: #f2d74c;
+  color: white;
 }
-header{
-    background-color: #F2D74C ;
-
+nav li {
+  display: inline;
+  font-family: "Montsrrat";
 }
-nav li{
-display: inline-block; 
-font-family: "Montsrrat";
 
+.logo {
+  width: 100px;
+  height: 100px;
 }
-.background{background: cover no-repeat url("..images/Clipboard.jpg");
-    
+.background {
+  background-image: url(../images/Clipboard.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
+.background .movie-poster {
+  width: 300px;
+  height: 300px;
+}
+form {
+  display: inline;
+}
+
+footer {
+  background-color: #202020;
+  color: #fff;
 }
