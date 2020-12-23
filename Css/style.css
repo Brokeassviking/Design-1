@@ -37,7 +37,7 @@ nav li {
   min-height: 70vh;
 }
 
-.background .movie-poster {
+.background-movie-poster {
   width: 480px;
   height: 255px;
 }
@@ -50,6 +50,8 @@ footer {
   color: #fff;
   height: 185px;
   text-decoration: none;
+  text-decoration-color: #fff;
+  font-weight: bold;
 }
 
 /*home page*/
@@ -60,4 +62,13 @@ footer {
   background-size: cover;
   min-height: 70vh;
   background-color: #f2d74c;
+}
+
+/*contacts*/
+.background-1 {
+  background-image: url(/images/Filming.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 70vh;
 }
