@@ -2,25 +2,40 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2)
     format("woff2");
 }
-
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCs6KVjbNBYlgoKcg72j00.woff2)
+    format("woff2");
+}
 h1,
 h2,
 p {
-  font-family: "Motserrat" Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Motserrat", sans-serif;
 }
 
 Header {
   background-color: #f2d74c;
   color: #fff;
-  height: 100px;
+}
+header a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  display: inline;
 }
 
 nav li {
   display: inline;
-  font-family: "Montsrrat";
+  font-family: "Montserrat", sans-serif;
   text-decoration: black;
 }
 
@@ -32,7 +47,7 @@ nav li {
 .background {
   background-image: url(../images/Clipboard.jpg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   min-height: 70vh;
 }
@@ -40,28 +55,39 @@ nav li {
 .background-movie-poster {
   width: 480px;
   height: 255px;
+  position: relative;
+  padding-left: 500px;
+  padding-top: 100px;
+  text-align: center;
+  color: #52518b;
+  font-family: "Ubuntu", sans-serif;
 }
+
 form {
   display: inline;
+}
+
+footer a:visited {
+  text-decoration: none;
+  color: white;
 }
 
 footer {
   background-color: #202020;
   color: #fff;
-  height: 185px;
-  text-decoration: none;
-  text-decoration-color: #fff;
-  font-weight: bold;
+  height: 85px;
+  font-weight: normal;
 }
 
 /*home page*/
 .section-1 {
   background-image: url(/images/portrait-cheerful-afro-american-man-3d-glasses.jpg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   min-height: 70vh;
   background-color: #f2d74c;
+  display: block;
 }
 
 /*contacts*/
@@ -71,4 +97,17 @@ footer {
   background-attachment: fixed;
   background-size: cover;
   min-height: 70vh;
+}
+.cta {
+  padding: 15px 40px;
+  font-size: 2em;
+  background-color: #f2d74c;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.product {
+  height: 250px;
+  width: 250px;
+  padding: 10px;
+  display: list-item;
 }
