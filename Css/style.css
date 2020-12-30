@@ -111,3 +111,15 @@ footer {
   padding: 10px;
   display: list-item;
 }
+
+/*Contact spesific*/
+
+.container-question {
+  display: block;
+  color: #52518b;
+  border-color: #52518b;
+  margin: 50px;
+  max-width: 1000px;
+  background-color: #f2d74c;
+  font-size: 1em;
+}
