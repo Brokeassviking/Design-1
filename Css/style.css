@@ -20,23 +20,19 @@ p {
   font-family: "Motserrat", sans-serif;
 }
 
-Header {
+header {
   background-color: #f2d74c;
-  color: #fff;
+  height: 60px;
 }
-header a:visited {
-  text-decoration: none;
-  color: black;
-}
-
-nav ul {
-  display: inline;
-}
-
-nav li {
+Header nav li {
   display: inline;
   font-family: "Montserrat", sans-serif;
   text-decoration: black;
+}
+
+header a:visited {
+  text-decoration: none;
+  color: black;
 }
 
 .logo {
@@ -44,39 +40,48 @@ nav li {
   max-height: 100px;
 }
 
-.background {
-  background-image: url(../images/Clipboard.jpg);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  min-height: 70vh;
-}
-
-.background-movie-poster {
-  width: 480px;
-  height: 255px;
-  position: relative;
-  padding-left: 500px;
-  padding-top: 100px;
-  text-align: center;
-  color: #52518b;
-  font-family: "Ubuntu", sans-serif;
-}
-
-form {
-  display: inline;
-}
-
 footer a:visited {
   text-decoration: none;
   color: white;
 }
 
-footer {
+footer ul {
   background-color: #202020;
   color: #fff;
-  height: 85px;
+  height: 95px;
   font-weight: normal;
+  text-align: right;
+  margin-block: auto;
+}
+.position {
+  padding: 20px, 40px;
+}
+
+/* Landing page */
+
+.background {
+  background-image: url(../images/Clipboard.jpg);
+  background-repeat: no-repeat;
+  background-attachment: static;
+  background-size: cover;
+  min-height: 70vh;
+}
+
+.background-content-LP {
+  width: 480px;
+  height: 255px;
+  padding-left: 500px;
+  padding-top: 100px;
+  color: #52518b;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+form {
+  display: inline;
 }
 
 /*home page*/
