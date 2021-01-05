@@ -22,12 +22,15 @@ p {
 
 header {
   background-color: #f2d74c;
-  height: 60px;
+  height: 110px;
 }
-Header nav li {
+header nav li {
   display: inline;
   font-family: "Montserrat", sans-serif;
   text-decoration: black;
+  padding: 100px;
+  font-size: x-large;
+  padding-top: 45px;
 }
 
 header a:visited {
@@ -62,22 +65,22 @@ footer ul {
 .background {
   background-image: url(../images/Clipboard.jpg);
   background-repeat: no-repeat;
-  background-attachment: static;
+  background-attachment: fixed;
   background-size: cover;
   min-height: 70vh;
 }
 
 .background-content-LP {
-  width: 480px;
-  height: 255px;
-  padding-left: 500px;
-  padding-top: 100px;
   color: #52518b;
   font-family: "Ubuntu", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+.background-content-LP img {
+  height: 200px;
+  margin: 100px;
 }
 
 form {
