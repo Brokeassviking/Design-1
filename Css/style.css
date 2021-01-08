@@ -14,6 +14,25 @@
   src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCs6KVjbNBYlgoKcg72j00.woff2)
     format("woff2");
 }
+
+@media (min-width: 40em) {
+/*Grid*/
+
+body{
+display: grid;
+
+grid-template-areas:
+"banner banner"
+"aside main"
+"fotter fotter" ;
+
+}
+header {grid-area: banner;}
+main{grid-area: main;}
+footer{grid-area: footer;}
+aside{grid-area: aside;}
+
+
 h1,
 h2,
 p {
@@ -22,17 +41,26 @@ p {
 
 header {
   background-color: #f2d74c;
-  height: 110px;
+ display: flex;
+ min-height: 10vh;
+ border: gray solid;
+ 
+ 
+  
+  
 }
+
 header nav li {
   display: inline;
   font-family: "Montserrat", sans-serif;
   text-decoration: black;
-  padding: 100px;
   font-size: x-large;
-  padding-top: 45px;
+margin-left: 100px;
+
 }
 
+/* Top and bottom*/
+ 
 header a:visited {
   text-decoration: none;
   color: black;
@@ -85,6 +113,7 @@ footer ul {
 
 form {
   display: inline;
+  
 }
 
 /*home page*/
@@ -96,6 +125,49 @@ form {
   min-height: 70vh;
   background-color: #f2d74c;
   display: block;
+}
+
+.Movies{
+  display: flex;   
+  flex-direction: row;
+  background-color: #52518b;
+  gap: 15px;
+  min-height: 70vh;
+  width: 100%;
+  align-items: center;
+  
+
+  
+}
+
+.Movies > * {
+
+  flex: 1;
+}
+
+.movie-thumbnail{
+  display: flex;
+  width: 100%;
+  height: 250px;
+  align-items: center;
+}
+
+.cta-hp{
+padding: 10px 20px;
+font: 1em "Montserrat";
+background-color: black;
+color: white;
+font-size: x-large;
+
+}
+
+ul form{
+  margin-left: 150px;
+}
+aside{
+background-color:#f2d74c;
+min-width: 20vh;
+border: solid gray;
 }
 
 /*contacts*/
@@ -117,7 +189,8 @@ form {
   height: 250px;
   width: 250px;
   padding: 10px;
-  display: list-item;
+  display: flex list-item;
+  
 }
 
 /*Contact spesific*/
@@ -131,3 +204,7 @@ form {
   background-color: #f2d74c;
   font-size: 1em;
 }
+
+
+/*Grids*/
+
