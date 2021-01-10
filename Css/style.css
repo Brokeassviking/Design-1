@@ -305,21 +305,3 @@ i {
   grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
 }
-
-@media only screen and (min-width: 600px) {
-  .grid-hp {
-    width: 360px;
-    display: block;
-    background-color: #f2d74c;
-  }
-  .Movies {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  header {
-    display: inherit;
-  }
-  footer {
-    text-align: left;
-  }
-}
