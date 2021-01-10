@@ -14,32 +14,33 @@
   src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCs6KVjbNBYlgoKcg72j00.woff2)
     format("woff2");
 }
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
 
 /*Grid*/
 
 .grid-lp {
   display: grid;
   grid-template-areas: "banner banner" "main main";
-  min-height: 97vh;
+  min-height: 100vh;
 }
 .grid-hp {
   display: grid;
-  grid-template-columns: 21vh auto;
-  grid-template-rows: 15vh auto;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr auto;
   grid-template-areas:
     "banner banner"
     "aside main"
     "fotter fotter";
 }
-.grid-about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "banner banner"
-    "main main"
-    "fotter fotter";
-}
+.grid-about,
 .grid-movies {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -48,6 +49,12 @@
     "banner banner"
     "main main"
     "fotter fotter";
+}
+.grid-contact{
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  
+}
 }
 
 header {
@@ -110,12 +117,13 @@ footer a:visited {
 footer ul {
   background-color: #202020;
   color: #fff;
-  height: 95px;
-  min-width: 10vh;
+  min-width: 100vh;
+  min-height: 95px;
+  text-align: right;
+  padding-right: 500px;
 }
-
-.position {
-  padding: 20px, 40px;
+footer li{
+  padding-top: 20px;
 }
 
 /* Landing page */
@@ -125,9 +133,10 @@ footer ul {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  min-height: 70vh;
+  min-height: 97vh;
   background-position: 50% 50%;
 }
+
 
 .background-content-LP {
   color: #52518b;
@@ -150,7 +159,7 @@ form {
 }
 
 /*home page*/
-.section-1 {
+.BG-img-HP {
   background-image: url(/images/portrait-cheerful-afro-american-man-3d-glasses.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -206,13 +215,15 @@ aside {
   border: solid gray;
 }
 
-/*contacts*/
+/*contact*/
 .background-1 {
   background-image: url(/images/Filming.jpg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
-  min-height: 70vh;
+  padding-top: 1px;
+min-height: 1000px;
+  
 }
 .cta {
   padding: 15px 40px;
@@ -228,24 +239,78 @@ aside {
   display: flex list-item;
 }
 
-/*Contact spesific*/
+/*Contact page spesific*/
 
 .container-question {
-  display: grid;
-  grid-template-columns: 1/3;
-  grid-template-rows: 1/3;
   color: #52518b;
   border-color: #52518b;
   margin: 50px;
   max-width: 1000px;
   background-color: #f2d74c;
-  font-size: 1em;
+  font-size: 2em;
+  text-align: center;
+  
 }
+.container-question-large {
+  color: #52518b;
+  border-color: #52518b;
+  margin: 50px;
+  
+  background-color: #f2d74c;
+  font-size: 1em;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+/* about page spesific*/
+
+.text-box {
+  background-color: rgba(82, 81, 139, 0.7);
+  width: 745px;
+  height: 250px;
+  margin-left: 75px;
+  margin-bottom: 100px;
+}
+.info-box {
+  background: #c3c6c2a3;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  max-height: 100vh;
+  padding-bottom: 0px;
+  margin-bottom: -16px;
+  margin-top: -99px;
+  justify-content: space-between;
+}
+.address-box{
+  margin-left: 0px;
+padding-left: 67px;
+}
+
+
+
 
 h1,
 h2,
 p {
-  font-family: "Motserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+i {
+  font-size: xx-large;
+  padding-left: 35px;
+  font-size: 3em;
+  color:#52518b;
+}
+
+/* Movies page spesific*/
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
 }
 
 @media only screen and (min-width: 600px) {
