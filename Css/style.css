@@ -14,6 +14,7 @@
   src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCs6KVjbNBYlgoKcg72j00.woff2)
     format("woff2");
 }
+
 .Site {
   display: flex;
   min-height: 100vh;
@@ -306,4 +307,19 @@ i {
 }
 
 @media only screen and (min-width: 600px) {
+  .grid-hp {
+    width: 360px;
+    display: block;
+    background-color: #f2d74c;
+  }
+  .Movies {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  header {
+    display: inherit;
+  }
+  footer {
+    text-align: left;
+  }
 }
