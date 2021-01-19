@@ -295,11 +295,6 @@ i {
 }
 
 @media screen and (max-width: 600px) {
-  header nav,
-  #hamburger-menu {
-    display: none;
-  }
-
   .hamburger-label {
     float: right;
     color: #fff;
@@ -311,13 +306,19 @@ i {
     display: none;
   }
 
-  #hamburger-menu :checked ~ header nav {
+  #hamburger-menu:checked ~ nav {
     display: block;
+  }
+
+  header nav,
+  #hamburger-menu {
+    display: none;
   }
 
   .BG-img-HP {
     background-image: none;
   }
+
   footer {
     display: inline;
   }
@@ -328,6 +329,7 @@ i {
 
   header nav li {
     display: block;
+    margin-left: 0px;
   }
 
   header nav a {
@@ -343,5 +345,89 @@ i {
 
   .current {
     font-weight: bold;
+  }
+}
+@media screen and (max-width: 900px) {
+  .hamburger-label {
+    float: right;
+    color: #fff;
+    padding: 10px;
+    display: block;
+  }
+
+  .Movies i {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
+
+  header nav,
+  #hamburger-menu {
+    display: none;
+  }
+
+  .BG-img-HP {
+    background-image: none;
+  }
+
+  footer {
+    display: inline;
+  }
+
+  header nav ul {
+    padding: 0px;
+  }
+
+  header nav li {
+    display: block;
+    margin-left: 0px;
+  }
+
+  header nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+  }
+
+  header nav a:hover {
+    text-decoration: underline;
+  }
+
+  .current {
+    font-weight: bold;
+  }
+
+  .Movies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #52518b;
+    gap: 15px;
+    min-height: 50vh;
+    width: 100%;
+    align-items: center;
+  }
+  .Movies i {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .Movies {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto 1fr auto 1fr 1fr;
+    background-color: #52518b;
+    gap: 15px;
+    min-height: 50vh;
+    width: 100%;
+    align-items: center;
+  }
+  .hamburger-label {
+    display: none;
+  }
+  #hamburger-menu {
+    display: none;
   }
 }
