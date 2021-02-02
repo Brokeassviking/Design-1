@@ -1,0 +1,19 @@
+.checkout {
+  background-color: #52518b;
+  box-sizing: border-box;
+}
+form i {
+  color: black;
+  font-size: 1em;
+  margin: 5px;
+}
+.card,
+i {
+  display: flex;
+  color: black;
+  justify-content: space-evenly;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}

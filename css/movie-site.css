@@ -1,6 +1,6 @@
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   overflow: hidden;
 }
@@ -8,7 +8,6 @@ img {
   width: 100%;
   grid-column: 2 / span 3;
   grid-row: 1 / 1;
-  width: 500px;
   height: 600px;
 }
 
@@ -30,6 +29,19 @@ h1 {
 
 .review {
   grid-row: 1 / span 3;
-  grid-column: 3 / span 3;
+  grid-column: 4 / span 5;
   justify-self: center;
+}
+
+.pay-cta {
+  font-family: "Ubuntu" sans-serif;
+  padding: 10px 21px;
+  font-size: xx-large;
+  grid-row: 2;
+  grid-column: 2;
+  align-self: end;
+}
+
+.review-area {
+  border: 10px;
 }
