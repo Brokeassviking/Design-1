@@ -19,30 +19,33 @@
     ></script>
   </head>
   <body>
-    <header>
+    <header class="header-big">
+      <a href="index.html">
+        <img src="images/SquareEyes_Logo.png" alt="logo" class="logo"/></a>
+      <i class="far fa-user-circle"></i>
+      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu"/>
       <nav>
-          <a href="index.html"> 
-              <img src="images/SquareEyes_Logo.png" alt="logo" class="logo"></a>
-              <i style="float: right; margin: 40px 30px 0px 0px;" class="far fa-user-circle"></i>
-          <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="movies.html">Movies</a></li>
-              <li><a href="about.html" >About us</a></li>
-              <li><a href="contact.html">Contact us</a></li>
-              
-               <li><form>
-              <form action="/Movies.html">
-                  <input type="text" placeholder="Search.." name="search">
-                  <button type="submit"><i class="fas fa-search"></i></i></button>
-      </form></li>        
-          </ul>
-          </nav>
+        <ul>
+          <li><a href="index.html" class="current">Home</a></li>
+          <li><a href="movies.html">Movies</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><form>
+            <form action="movies.html">
+
+            </nav>
+            <section class="search">
+              <form action="movies">
+              <input type="text" placeholder="Search.." name="search"></form>
+                <a href="movies.html"><i class="fas fa-search"></i></a>
+           </section>
       </header>
       <main>
         <img src="/images/guy-in-shoppingcart.jpg" alt="movie">
-        <p class="text">Bla bla bla bla bla bla</p> 
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto repellendus, enim rem, incidunt illum soluta quasi suscipit maiores quas libero magni magnam ullam. Pariatur quam odit error commodi alias rerum!</p> 
         <p>Cost $$$</p>
-        <h1>Movie title</h1>
+        <h1 class="movie-title">Movie title</h1>
         <section class="review">
         <div>
 
@@ -63,12 +66,7 @@
         </div>
         </section>
 
-        <a href="checkout.html" class="pay-cta">
-          <form action="submit">
-            <label for="Pay per view"></label>
-            <input type="button" id="pay-cta" value="Pay per view" name="cta">
-          </form>
-        </a>
+        <a href="checkout.html" class="pay-cta"> Pay per view</a>
 
 
       </main>

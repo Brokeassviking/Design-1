@@ -1,24 +1,19 @@
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   overflow: hidden;
 }
-img {
+main > img {
   width: 100%;
   grid-column: 2 / span 3;
   grid-row: 1 / 1;
   height: 600px;
-}
-
-p,
-h1 {
-  display: flex;
+  padding-top: 45px;
 }
 
 .text {
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row: 1/2;
   text-align: center;
 }
 
@@ -28,9 +23,12 @@ h1 {
 }
 
 .review {
-  grid-row: 1 / span 3;
-  grid-column: 4 / span 5;
+  grid-row: 1 /1;
+  grid-column: 5 / span 5;
   justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .pay-cta {
@@ -44,4 +42,13 @@ h1 {
 
 .review-area {
   border: 10px;
+}
+
+.movie-title {
+  letter-spacing: 80px;
+  margin-left: 48px;
+  border-style: solid;
+  height: 34.567px;
+  width: 1044px;
+  padding-left: 15px;
 }
