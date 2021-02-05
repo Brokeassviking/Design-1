@@ -12,6 +12,7 @@ i {
   display: flex;
   color: black;
   justify-content: space-evenly;
+  font-size: 2em;
 }
 .container {
   background-color: white;
@@ -19,10 +20,11 @@ i {
   justify-content: space-between;
 }
 
-.row form input [type="text"] {
-  width: 100%;
+.row form input {
+  color: white;
   background-color: #52518b;
   padding: 10px 0px 10px 0px;
+  font-weight: 500;
 }
 
 .row label {

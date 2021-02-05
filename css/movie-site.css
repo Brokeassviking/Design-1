@@ -1,15 +1,20 @@
+p div * {
+  border: solid;
+}
+
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr auto;
   overflow: hidden;
 }
 main > img {
   width: 100%;
   grid-column: 2 / span 3;
   grid-row: 1 / 1;
-  height: 600px;
+  height: 500px;
   padding-top: 45px;
+  border: solid;
 }
 
 .text {
@@ -25,23 +30,36 @@ h1 {
 .review {
   grid-row: 1 /1;
   grid-column: 5 / span 5;
-  justify-self: center;
+  justify-self: stretch;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  border: solid;
+}
+.review div {
+  border: 2px solid;
+  height: 61px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  padding-left: 3px;
 }
 
 .pay-cta {
   font-family: "Ubuntu" sans-serif;
   padding: 10px 21px;
   font-size: xx-large;
-  grid-row: 2;
-  grid-column: 2;
-  align-self: end;
+  grid-column: 3;
+  justify-self: center;
+  color: white;
+  background-color: #52518b;
+  text-decoration: none;
+  border-radius: 10px;
 }
 
-.review-area {
-  border: 10px;
+.info-area {
+  border: solid;
+  letter-spacing: 15px;
+  display: grid;
 }
 
 .movie-title {
@@ -51,4 +69,10 @@ h1 {
   height: 34.567px;
   width: 1044px;
   padding-left: 15px;
+}
+.review-stars {
+  align-self: end;
+}
+.review-stars i {
+  color: rgb(226, 226, 23);
 }

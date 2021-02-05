@@ -25,6 +25,17 @@
   flex: 1;
 }
 
+/*global*/
+h1,
+h2,
+p {
+  font-family: "Ubuntu", sans-serif;
+}
+i {
+  font-size: xx-large;
+  color: #52518b;
+}
+
 /*Grid*/
 
 .grid-contact {
@@ -39,12 +50,9 @@
 
 .header-big {
   background-color: #f2d74c;
-  max-height: 15vh;
   border: gray solid;
   display: flex;
-}
-header ul {
-  display: inline-block;
+  justify-content: space-between;
 }
 
 header nav {
@@ -52,11 +60,11 @@ header nav {
 }
 
 header nav li {
-  display: inline-block;
   font-family: "Montserrat", sans-serif;
   text-decoration: black;
   font-size: x-large;
   margin-left: 150px;
+  display: inline-block;
 }
 
 header a:visited {
@@ -67,13 +75,19 @@ header a:visited {
 .search {
   align-self: auto;
   padding-top: 60px;
-  margin-left: 205px;
+}
+.search input {
+  height: 25px;
+  border-radius: 15px;
+}
+.search a {
+  position: absolute;
 }
 
 .far.fa-user-circle {
   font-size: xxx-large;
   order: 1;
-  margin-left: 61px;
+  margin-right: 25px;
   margin-top: 23px;
 }
 
@@ -99,6 +113,31 @@ footer ul {
 }
 footer li {
   padding-top: 20px;
+}
+
+/* about page spesific*/
+
+.text-box {
+  background-color: rgba(82, 81, 139, 0.7);
+  width: 745px;
+  height: 250px;
+  margin-left: 75px;
+  margin-bottom: 100px;
+}
+.info-box {
+  background: #c3c6c2a3;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-bottom: -16px;
+  margin-top: -99px;
+  justify-content: space-between;
+}
+.address-box {
+  margin-left: 0px;
+  padding-left: 67px;
+}
+.social-box i {
+  margin: 10px;
 }
 
 /*contact*/
@@ -153,16 +192,6 @@ footer li {
   margin-right: 100px;
 }
 
-h1,
-h2,
-p {
-  font-family: "Ubuntu", sans-serif;
-}
-i {
-  font-size: xx-large;
-  color: #52518b;
-}
-
 .h1-contact {
   text-align: center;
   font-size: 2em;
@@ -177,17 +206,14 @@ i {
   grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
 }
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 300px) and (max-width: 600px) {
   .logo {
     width: 100px;
     height: 100px;
   }
 
   .hamburger-label {
-    float: right;
-    color: #fff;
     padding: 10px;
-    display: block;
   }
 
   .movies i {
@@ -197,6 +223,20 @@ i {
   #hamburger-menu:checked ~ nav {
     display: block;
   }
+
+  header nav,
+  #hamburger-menu {
+    display: none;
+  }
+
+  header .search,
+  #hamburger-menu {
+    display: none;
+  }
+  #hamburger-menu:checked ~ .search {
+    display: block;
+  }
+
   header {
     background-color: #f2d74c;
     min-height: 15vh;
@@ -204,7 +244,6 @@ i {
     display: flex;
   }
 
-  header nav,
   #hamburger-menu {
     display: none;
   }
@@ -215,11 +254,6 @@ i {
 
   footer {
     display: inline;
-  }
-
-  header nav ul {
-    padding: 0px;
-    display: block;
   }
 
   header nav a {
@@ -238,34 +272,28 @@ i {
   }
 
   .movies {
-    display: grid;
     grid-template-columns: 1fr;
-    background-color: #52518b;
-    gap: 15px;
-    min-height: 50vh;
-    width: 100%;
-    align-items: center;
   }
   .Movies i {
     display: none;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 900px) {
   .logo {
     width: 125px;
     height: 125px;
   }
-
-  .hamburger-label {
-    float: right;
-    color: #fff;
-    padding: 10px;
-    display: block;
+  .search {
+    display: none;
   }
 
   .movies i {
     display: none;
+  }
+
+  .movies {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   header {
@@ -279,7 +307,6 @@ i {
     display: block;
   }
 
-  header nav,
   #hamburger-menu {
     display: none;
   }
@@ -290,15 +317,6 @@ i {
 
   footer {
     display: inline;
-  }
-
-  header nav ul {
-    padding: 0px;
-  }
-
-  header nav li {
-    display: block;
-    margin-left: 0px;
   }
 
   header nav a {
@@ -313,14 +331,13 @@ i {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   .logo {
     height: 95px;
     width: 140px;
   }
 
   .movies {
-    display: grid;
     grid-template-columns: 1fr 1fr auto 1fr auto 1fr 1fr;
   }
   .hamburger-label {

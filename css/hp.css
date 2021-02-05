@@ -12,12 +12,15 @@
 
 .movies {
   display: grid;
-  grid-template-columns: 1fr 1fr auto 1fr auto 1fr 1fr;
   background-color: #52518b;
   gap: 15px;
   min-height: 50vh;
   width: 100%;
   align-items: center;
+}
+.movies i {
+  color: black;
+  display: inline;
 }
 
 .movie-thumbnail {
