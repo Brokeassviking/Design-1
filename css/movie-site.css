@@ -3,10 +3,8 @@ p div * {
 }
 
 .grid-ms {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr auto;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 main > img {
   width: 100%;
@@ -28,9 +26,6 @@ h1 {
 }
 
 .review {
-  grid-row: 1 /1;
-  grid-column: 5 / span 5;
-  justify-self: stretch;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -58,16 +53,11 @@ h1 {
 
 .info-area {
   border: solid;
-  letter-spacing: 15px;
   display: grid;
 }
 
 .movie-title {
-  letter-spacing: 80px;
-  margin-left: 48px;
   border-style: solid;
-  height: 34.567px;
-  width: 1126px;
   padding-left: 15px;
   margin-top: 0px;
   margin-left: 0px;
@@ -86,4 +76,57 @@ h1 {
   font-size: 2em;
   margin-top: -3px;
   border: solid;
+}
+
+@media screen and(min-width:300px) and (max-width: 600px) {
+  .grid-ms {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 900px) {
+  .grid-ms {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    overflow: hidden;
+  }
+
+  .movie-title {
+    letter-spacing: 80px;
+    margin-left: 48px;
+    border-style: solid;
+    height: 34.567px;
+    width: 1126px;
+    padding-left: 15px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .review {
+    grid-row: 1 /1;
+    grid-column: 5 / span 5;
+    justify-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: solid;
+  }
+  .pay-cta {
+    font-family: "Ubuntu";
+    padding: 10px 21px;
+    font-size: xx-large;
+    grid-column: 3;
+    justify-self: center;
+    color: white;
+    background-color: #52518b;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  .info-area {
+    border: solid;
+    letter-spacing: 15px;
+    display: grid;
+  }
 }

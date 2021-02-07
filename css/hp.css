@@ -38,12 +38,23 @@
   font-size: x-large;
   margin-right: 100px;
 }
-.container {
-  margin-top: 150px;
-  margin-left: 15px;
-  font-size: x-large;
-}
 
 ul form {
   margin-left: 150px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .container {
+    font-size: x-large;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+}
+@media screen and (min-width: 900px) {
+  .container {
+    font-size: x-large;
+    margin-top: 150px;
+    margin-left: 70px;
+  }
 }
