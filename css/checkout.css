@@ -7,32 +7,46 @@ form i {
   font-size: 1em;
   margin: 5px;
 }
-.card,
-i {
-  display: flex;
+
+.card {
+  position: absolute;
+  left: 59%;
+  top: 32%;
   color: black;
-  justify-content: space-evenly;
+
   font-size: 2em;
 }
 .container {
   background-color: white;
   display: flex;
   justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 0 200px;
 }
 
-.row form input {
+.row input,
+select {
   color: white;
   background-color: #52518b;
   padding: 10px 0px 10px 0px;
-  font-weight: 500;
+  border-radius: 5px;
+  margin: 10px 0px 0px 15px;
 }
 
 .row label {
   display: block;
+  font-size: 1em;
+  margin: 10px 0px 0px 15px;
 }
 
-.row {
+.row,
+h1 {
   flex: 50%;
+  align-self: center;
+}
+.row-top {
+  display: flex;
 }
 
 p {

@@ -45,7 +45,7 @@ h1 {
 }
 
 .pay-cta {
-  font-family: "Ubuntu" sans-serif;
+  font-family: "Ubuntu";
   padding: 10px 21px;
   font-size: xx-large;
   grid-column: 3;
