@@ -36,6 +36,14 @@ i {
   color: #52518b;
 }
 
+video {
+  width: 900;
+  height: 900;
+  left: 30%;
+  top: 30%;
+  position: absolute;
+}
+
 /*Grid*/
 
 .grid-contact {
