@@ -1,11 +1,7 @@
 /*home page*/
 .BG-img-HP {
-  background-image: url(/images/imageedit_2_7501145368.jpg);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
   min-height: 70vh;
-  background-color: #f2d74c;
+  background-color: #febd45;
   display: grid;
   background-position: 50% 31%;
 }
@@ -20,7 +16,7 @@
 }
 .movies i {
   color: black;
-  display: inline;
+  display: none;
 }
 
 .movie-thumbnail {
@@ -47,14 +43,34 @@ ul form {
   .container {
     font-size: x-large;
   }
+  .BG-img-HP {
+    background-color: #febd45;
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
+  .container {
+    font-size: x-large;
+  }
 }
 @media screen and (min-width: 900px) {
   .container {
     font-size: x-large;
     margin-top: 150px;
     margin-left: 70px;
+  }
+  .BG-img-HP {
+    background-image: url(/images/imageedit_2_7501145368.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 70vh;
+    background-color: #f2d74c;
+    display: grid;
+    background-position: 50% 31%;
+  }
+  .movies i {
+    color: black;
+    display: inline;
   }
 }
